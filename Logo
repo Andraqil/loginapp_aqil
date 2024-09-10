@@ -1,0 +1,23 @@
+import React, { Component } from 'react':
+import {
+  StylesSheet,
+  Text,
+  View,
+  TextInput,
+  TouchableOpacity
+} from 'react-native';
+export default class logo extend Component <()> {
+  render(){
+    return(
+    <view style = {style.container}>
+    <Image style = {{} width:40, height:70}>
+    source = {require('../images/logo.png)}/>
+    <Text style = {style.logotext}>Welcome To My Apps.</Text>
+    </View>
+    )
+  }
+}
+const style = StyleSheet.create({
+    container : { flewGrow:1, justifyContent:'flex-end', alignItem:'center'},
+    logoText : {marginVertical:15, fontsize:18, color:'rgba(225,255,255,0,7)'}
+});
