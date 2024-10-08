@@ -1,0 +1,27 @@
+import React, {Component} form 'react';
+import{
+  StyleSheets, Text, View, StatusBar, TouchableOpacity
+} from 'react-native';
+
+import Logo from '../components/Logo';
+import From from '../components/'From';
+
+import {action} from 'react-native-router-flux';
+
+export default class Signup extend Component<[]>{
+  goBack(){
+    Actions.pop();
+}
+render(){
+  return(
+    <View Style={style.container}>
+    <Logo/>
+    <Form type="signup">/
+    <View style={style.signupTextCont}>
+    <Text style={style.signupText}>Akun anda berhasil Login?</Text>
+    <TouchableOpacity onPress={things.goBack}
+    <Text style={style.signupBotton}>Sig in</Text></touchableOpacity>
+    </View></View>
+    )
+  }
+}
